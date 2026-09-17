@@ -6,7 +6,7 @@
 }
 
 :root {
-  --bg-color: #fcfbf7;
+  --bg-color: #f7f4ee;
   --card-bg: #ffffff;
   --text-main: #2c241d;
   --text-muted: #6b5b52;
@@ -21,70 +21,71 @@ body {
   background-color: var(--bg-color);
   color: var(--text-main);
   line-height: 1.6;
-  min-height: 100vh;
+  padding: 30px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
 }
 
-/* --- CONTAINER UTAMA --- */
-.container, header, main, .profile-section {
+/* --- KONTainer UTAMA & HEADER --- */
+.container {
   width: 100%;
   max-width: 900px;
+  margin: 0 auto;
 }
 
 header {
-  text-align: center;
-  padding: 40px 20px;
   background: var(--card-bg);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  border-radius: 16px;
+  padding: 40px 30px;
+  text-align: center;
   box-shadow: var(--shadow);
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: var(--accent-brown);
-  margin-bottom: 10px;
-  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  font-weight: 700;
 }
 
 header p {
   color: var(--text-muted);
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
-/* --- KARTU & KONTEN --- */
-.content-box {
+/* --- KOTAK KONTEN / SECTION --- */
+section, .content-box {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 30px;
+  border-radius: 16px;
+  padding: 35px;
   box-shadow: var(--shadow);
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
-/* --- BAGIAN PROFIL & FOTO --- */
+/* --- BAGIAN PROFIL ANGGOTA --- */
 .profile-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 25px;
   flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .profile-card {
   background: var(--bg-color);
   border: 1px solid var(--border-color);
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 12px;
+  padding: 25px 20px;
   text-align: center;
   flex: 1;
-  min-width: 220px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-  transition: transform 0.3s ease;
+  min-width: 230px;
+  max-width: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .profile-card:hover {
@@ -92,20 +93,22 @@ header p {
   border-color: var(--primary-gold);
 }
 
-/* Pengaturan Foto Profil agar Bulat & Rapi */
-.profile-card img {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--primary-gold);
-  margin-bottom: 15px;
+/* KONTROL FOTO PROFIL (Biar Pas, Bulat, & Tidak Raksasa) */
+.profile-card img, img {
+  width: 120px !important;
+  height: 120px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  border: 4px solid var(--primary-gold);
+  display: block;
+  margin: 0 auto 15px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .profile-card h3 {
   color: var(--accent-brown);
-  font-size: 1.1rem;
-  margin-bottom: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
 }
 
 .profile-card p {
@@ -113,10 +116,10 @@ header p {
   font-size: 0.9rem;
 }
 
-/* --- RESPONSIF KHUSUS HP --- */
+/* --- RESPONSIF UNTUK HP / LAYAR KECIL --- */
 @media screen and (max-width: 768px) {
   body {
-    padding: 10px;
+    padding: 15px 10px;
   }
 
   header {
@@ -124,10 +127,10 @@ header p {
   }
 
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
-  .content-box {
+  section, .content-box {
     padding: 20px 15px;
   }
 
@@ -138,6 +141,6 @@ header p {
 
   .profile-card {
     width: 100%;
-    max-width: 280px;
+    max-width: 100%;
   }
 }

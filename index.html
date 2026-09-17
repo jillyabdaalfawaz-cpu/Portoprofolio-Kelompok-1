@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Kelompok - Manajemen Pendidikan UIN Jakarta</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon menggunakan foto Rifki -->
+    <link rel="icon" type="image/jpeg" href="profile.img/rifki.jpeg">
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Suasana Perpustakaan Terang -->
+    <header class="hero">
+        <div class="hero-content">
+            <span class="library-badge"><i class="fa-solid fa-book-bookmark"></i> Arsip & Portofolio Akademik</span>
+            <h1>Manajemen Pendidikan UIN Jakarta</h1>
+            <p>Jendela Informasi & Profil Anggota Kelompok</p>
+        </div>
+        <!-- Navigasi Pembatas Buku (Tab) -->
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="openProfile(event, 'rifky')">
+                <i class="fa-solid fa-bookmark"></i> Muhammad Rifky
+            </button>
+            <button class="tab-btn" onclick="openProfile(event, 'jilly')">
+                <i class="fa-solid fa-bookmark"></i> Jilly Abda
+            </button>
+            <button class="tab-btn" onclick="openProfile(event, 'rianti')">
+                <i class="fa-solid fa-bookmark"></i> Rianti Devi
+            </button>
+        </div>
+    </header>
+
+    <!-- Konten Utama (Buku Terbuka) -->
+    <main class="container">
+
+        <!-- ================= PROFIL 1: RIFKY ================= -->
+        <section id="rifky" class="profile-section active-section">
+            <div class="book-page">
+                <div class="profile-header">
+                    <div class="avatar-box">
+                        <img src="profile.img/rifki.jpeg" alt="Muhammad Rifky Eliyanto" class="profile-img">
+                    </div>
+                    <div>
+                        <h2>Muhammad Rifky Eliyanto</h2>
+                        <p class="subtitle"><i class="fa-solid fa-location-dot"></i> Depok, Jawa Barat | Jakarta, 12 Mei 2006</p>
+                        <p class="contact-info"><i class="fa-solid fa-phone"></i> +62 878-1469-1115 | <i class="fa-solid fa-envelope"></i> rifkyeliyanto12@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="grid-content">
+                    <div class="chapter-box">
+                        <h3><i class="fa-solid fa-graduation-cap"></i> Riwayat Pendidikan</h3>
+                        <ul class="timeline">
+                            <li><strong>2025 - Sekarang:</strong> S1 Manajemen Pendidikan, UIN Syarif Hidayatullah Jakarta</li>
+                            <li><strong>2022 - 2025:</strong> SMAN 1 Pangkah</li>
+                            <li><strong>2019 - 2022:</strong> SMP Negeri 1 Pangkah</li>
+                            <li><strong>2013 - 2019:</strong> SD N Bogares Kidul 02</li>
+                        </ul>
+                    </div>
+
+                    <div class="chapter-box">
+                        <h3><i class="fa-solid fa-users"></i> Pengalaman Organisasi</h3>
+                        <ul class="timeline">
+                            <li><strong>2023 - 2024:</strong> Ketua Ekstrakurikuler Basket SMAN 1 Pangkah</li>
+                            <li><strong>2025:</strong> Asisten Pelatih Basket di MAN 1 Tegal</li>
+                            <li><strong>2022 - 2023:</strong> Anggota OSIS Sekbid 4 SMAN 1 Pangkah</li>
+                            <li><strong>2020 - 2021:</strong> Anggota OSIS Sekbid 3 SMPN 1 Pangkah</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="chapter-box full-width">
+                    <h3><i class="fa-solid fa-award"></i> Prestasi & Keahlian</h3>
+                    <div class="badge-container">
+                        <span class="badge">Juara 3 Bersama POPDA Kab. Tegal (Cabor Basket)</span>
+                        <span class="badge">Juara 3 Pekan Olahraga Kab. Tegal (Cabor Basket)</span>
+                        <span class="badge">Kepemimpinan & Organisasi</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= PROFIL 2: JILLY ================= -->
+        <section id="jilly" class="profile-section">
+            <div class="book-page">
+                <div class="profile-header">
+                    <div class="avatar-box">
+                        <img src="profile.img/jilly.jpeg" alt="Jilly Abda Al Pawaz" class="profile-img">
+                    </div>
+                    <div>
+                        <h2>Jilly Abda Al Pawaz</h2>
+                        <p class="subtitle"><i class="fa-solid fa-briefcase"></i> Data Analyst & Educational Management Research</p>
+                        <p class="contact-info">
+                            <i class="fa-solid fa-envelope"></i> abdaalfawaz@gmail.com | 
+                            <i class="fa-solid fa-phone"></i> +62 854-4510-8984 | 
+                            <i class="fa-brands fa-github"></i> <a href="https://jillyabdaalfawaz-cpu.github.io/CV-Jilly-Abda-Al-Pawaz" target="_blank">Live Portfolio</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="chapter-box full-width">
+                    <h3><i class="fa-solid id-card"></i> Ringkasan Profesional</h3>
+                    <p>Mahasiswa S1 Manajemen Pendidikan UIN Jakarta dengan fondasi manajerial kuat dan ketertarikan tinggi pada <em>Data Analytics</em>. Berpengalaman magang di bidang HRGA serta menguasai pengolahan data dengan Excel, MySQL, Python, dan Power BI.</p>
+                </div>
+
+                <div class="grid-content">
+                    <div class="chapter-box">
+                        <h3><i class="fa-solid fa-briefcase"></i> Pengalaman & Magang</h3>
+                        <ul class="timeline">
+                            <li><strong>PT Pilar Niaga Makmur:</strong> Staff HCGA (Internship)</li>
+                            <li><strong>Generasi Muda Bela Negara TNI:</strong> Scripting & PDD Staff</li>
+                            <li><strong>Involuntir Jakarta:</strong> Volunteer Petualangan Satwa Edukatif</li>
+                        </ul>
+                    </div>
+
+                    <div class="chapter-box">
+                        <h3><i class="fa-solid fa-code"></i> Keahlian Teknis & Tools</h3>
+                        <div class="badge-container">
+                            <span class="badge">Microsoft Excel</span>
+                            <span class="badge">MySQL</span>
+                            <span class="badge">Python (Pandas & NumPy)</span>
+                            <span class="badge">Power BI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= PROFIL 3: RIANTI ================= -->
+        <section id="rianti" class="profile-section">
+            <div class="book-page">
+                <div class="profile-header">
+                    <div class="avatar-box">
+                        <img src="profile.img/Rianti.jpeg" alt="Rianti Devi Lestari" class="profile-img">
+                    </div>
+                    <div>
+                        <h2>Rianti Devi Lestari</h2>
+                        <p class="subtitle"><i class="fa-solid fa-location-dot"></i> Cengkareng, Jakarta Barat</p>
+                        <p class="contact-info"><i class="fa-solid fa-phone"></i> +62 852-1381-2231 | <i class="fa-solid fa-envelope"></i> riantidevilestari@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="chapter-box full-width">
+                    <h3><i class="fa-solid fa-id-card"></i> Ringkasan Profil</h3>
+                    <p>Mahasiswa Manajemen Pendidikan UIN Syarif Hidayatullah Jakarta yang memiliki pengalaman luas dalam mendidik anak usia dini. Berdedikasi tinggi, komunikatif, serta memahami karakter dan kebutuhan belajar anak secara interaktif.</p>
+                </div>
+
+                <div class="grid-content">
+                    <div class="chapter-box">
+                        <h3><i class="fa-solid fa-chalkboard-user"></i> Pengalaman Kerja & Pengabdian</h3>
+                        <ul class="timeline">
+                            <li><strong>Pengajar TK - TK Harapan Jaya (2024 - Sekarang):</strong> Mendampingi pembelajaran harian dan membimbing mengaji anak.</li>
+                            <li><strong>Pengajar Les Privat (2024 - Sekarang):</strong> Membimbing siswa memahami materi sekolah sesuai kebutuhan.</li>
+                        </ul>
+                    </div>
+
+                    <div class="chapter-box">
+                        <h3><i class="fa-solid fa-graduation-cap"></i> Pendidikan Formal</h3>
+                        <ul class="timeline">
+                            <li><strong>2025 - Sekarang:</strong> S1 Manajemen Pendidikan, UIN Syarif Hidayatullah Jakarta.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tugas Kelompok Portofolio • UIN Syarif Hidayatullah Jakarta</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
